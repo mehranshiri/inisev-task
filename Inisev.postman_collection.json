@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "f50c0402-a049-4066-be4f-83e8a9f9c3fe",
+		"name": "Inisev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6339068",
+		"_collection_link": "https://edubaz.postman.co/workspace/Evand-Team~b3496392-5d5b-4fee-9217-d22bdbf86323/collection/6339068-f50c0402-a049-4066-be4f-83e8a9f9c3fe?action=share&source=collection_link&creator=6339068"
+	},
+	"item": [
+		{
+			"name": "Subscribe to a website",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "example@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/websites/3/subscribe",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"websites",
+						"3",
+						"subscribe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Game Post Title",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "1 post for Game hub",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/websites/3/posts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"websites",
+						"3",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
